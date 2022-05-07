@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import GithubUser from '../views/GithubUser.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/:username',
+    name: 'GithubUser',
+    component: GithubUser
   },
   {
     path: '/about',
