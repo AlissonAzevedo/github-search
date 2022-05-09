@@ -21,8 +21,7 @@ export default {
   data () {
     return {
       username: '',
-      isValidUser: false,
-      avatar_url: ''
+      isValidUser: false
     }
   },
   methods: {
