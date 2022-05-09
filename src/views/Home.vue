@@ -1,7 +1,9 @@
 <template>
   <main class="container">
     <img alt="github logo" src="../assets/logo.png">
-    <SearchUser/>
+    <div class="searchInput">
+      <SearchUser/>
+    </div>
   </main>
 </template>
 
@@ -24,5 +26,8 @@ export default {
   align-items: center;
   justify-content: center;
   height: 90vh;
+}
+.searchInput{
+  width: 700px;
 }
 </style>
