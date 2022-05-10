@@ -5,7 +5,9 @@ export default createStore({
     favorites: [],
     user: {},
     repos: [],
-    stars: ''
+    stars: '',
+    error: '',
+    favorite: []
   },
   mutations: {
     setUsername (state, payload) {
@@ -19,9 +21,31 @@ export default createStore({
     },
     setStarred (state, payload) {
       state.stars = payload
+    },
+    setError (state, payload) {
+      state.error = payload
+    },
+    setAddFavorite (state, payload) {
+      state.favorite.push(payload)
+      state.favorite = state.favorite.filter((repo, i) => state.favorite.indexOf(repo) === i)
+    },
+    setRemoveFavorite (state, payload) {
+      state.favorite = state.favorite.filter((favorite) => {
+        if (state.favorite.indexOf(favorite) === payload) {
+          state.favorite.splice(payload, 1)
+        }
+        return favorite
+      })
     }
   },
-  actions: {},
+  actions: {
+    Favorite ({ commit }, payload) {
+      commit('setAddFavorite', payload)
+    },
+    RemoveFavorite ({ commit }, payload) {
+      commit('setRemoveFavorite', payload)
+    }
+  },
   getters: {
     getUsername (state) {
       return state.username
@@ -34,6 +58,12 @@ export default createStore({
     },
     getStarred (state) {
       return state.stars
+    },
+    getError (state) {
+      return state.error
+    },
+    getFavorite (state) {
+      return state.favorite
     }
   },
   modules: {

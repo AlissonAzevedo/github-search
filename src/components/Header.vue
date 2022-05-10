@@ -1,5 +1,5 @@
 <template>
-<header v-if="!IsHome">
+<header>
     <div>
       <router-link to="/">
         <img class="logo" alt="github logo" src="../assets/logo.png">
@@ -17,11 +17,6 @@ export default {
   name: 'Header',
   components: {
     SearchUser
-  },
-  computed: {
-    IsHome () {
-      return this.$route.path === '/'
-    }
   }
 }
 </script>

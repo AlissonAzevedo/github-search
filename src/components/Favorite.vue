@@ -4,12 +4,12 @@
             <router-link to="/favorites">
                <div class="row">
                    <img src="../assets/starIconActive.svg" alt="">
-                    <span>Repositorio Favoritado</span>
+                    <span>Repositorios Favoritados</span>
                </div>
             </router-link>
             <div class="row">
                 <img src="../assets/starIcon.svg" alt="">
-                <span>Repositorio não Favoritado</span>
+                <span>Repositorios não Favoritados</span>
             </div>
         </div>
     </div>

@@ -4,8 +4,8 @@
             <div class="containerRepoInfo">
                 <div class="row">
                     <h3>{{repo.name}}</h3>
-                    <div class="starDisabled">
-                      <img @click="addFavorite" src="../assets/starIcon.svg" alt="stars"/>
+                    <div class="rowStar">
+                      <img @click="addFavorite(repo)" :src="this.star_url" alt="stars"/>
                     </div>
                     <!--<div v-else class="starEnable">
                       <img src="../assets/starIconActive.svg" alt="stars"/>
@@ -23,7 +23,18 @@
 
 <script>
 export default {
-  name: 'ResultUser'
+  name: 'ResultUser',
+  data () {
+    return {
+      star_url: require('../assets/starIcon.svg')
+    }
+  },
+  methods: {
+    addFavorite (repo) {
+      this.$store.dispatch('Favorite', repo)
+      console.log(this.$store.getters.getFavorite)
+    }
+  }
 }
 </script>
 
@@ -77,7 +88,13 @@ h3{
 span{
   color: #757575;
 }
-.starDisabled, .starEnable img{
+.rowStar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.rowStar img{
   cursor: pointer;
 }
 </style>

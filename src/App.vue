@@ -1,5 +1,5 @@
 <template>
-  <div class="containerResult">
+  <div v-if="!IsHome" class="containerResult">
     <Header/>
   </div>
   <router-view/>
@@ -9,6 +9,11 @@ import Header from './components/Header.vue'
 export default {
   components: {
     Header
+  },
+  computed: {
+    IsHome () {
+      return this.$route.path === '/'
+    }
   }
 }
 </script>
