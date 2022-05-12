@@ -32,7 +32,7 @@ export default {
   methods: {
     addFavorite (repo) {
       this.$store.dispatch('Favorite', repo)
-      console.log(this.$store.getters.getFavorite)
+      // console.log(this.$store.getters.getFavorite)
     }
   }
 }

@@ -50,4 +50,7 @@ export default {
     color: #000;
     font-size: 1rem;
 }
+a{
+    text-decoration: none;
+}
 </style>

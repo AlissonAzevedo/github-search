@@ -1,9 +1,12 @@
 <template>
 <header>
-    <div>
+    <div v-if="!IsFavorite">
       <router-link to="/">
         <img class="logo" alt="github logo" src="../assets/logo.png">
       </router-link>
+    </div>
+    <div v-else>
+      <h1>Repositórios Favoritados</h1>
     </div>
     <div class="searchUser">
       <SearchUser/>
@@ -17,6 +20,11 @@ export default {
   name: 'Header',
   components: {
     SearchUser
+  },
+  computed: {
+    IsFavorite () {
+      return this.$route.path === '/favorites'
+    }
   }
 }
 </script>
