@@ -49,7 +49,7 @@ Esse projeto é um teste de Front-end da Lux-One para nível Júnior.
 ## :bulb: Proposta ##
 Implementar uma aplicação client-side, que consulte a API do GitHub e mostre os repositórios de um determinado usuário. Esta aplicação deve funcionar nos principais navegadores.
 <!--Describe your project-->
-## :sparkles: Requirements ##
+## :sparkles: Requisitos ##
 <ul>
   <li>Eu, como usuário, desejo buscar por um usuário do GitHub;</li>
   <li>Eu, como usuário, desejo visualizar os detalhes desse usuário que foi buscado (organização, localização, número de seguidores, repositórios e stars);
