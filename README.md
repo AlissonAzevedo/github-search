@@ -59,12 +59,13 @@ Implementar uma aplicação client-side, que consulte a API do GitHub e mostre o
   <li>Ao buscar um usuário pelo login do github, redirecionar para página de resultados da busca.</li>
   <li>Se o usuário for encontrado, apresentar os detalhes do usuário, senão, exibir mensagem amigável.</li>
 </ul>
+
 <!--## :sparkles: Features ##
 
 :heavy_check_mark: Feature 1;\
 :heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
--->
+:heavy_check_mark: Feature 3;-->
+
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
