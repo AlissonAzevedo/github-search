@@ -46,14 +46,25 @@
 
 ## :dart: About ##
 
-Describe your project
-
-## :sparkles: Features ##
+Implementar uma aplicação client-side, que consulte a API do GitHub e mostre os repositórios de um determinado usuário. Esta aplicação deve funcionar nos principais navegadores.
+<!--Describe your project-->
+## :sparkles: Requirements ##
+<ul>
+  <li>Eu, como usuário, desejo buscar por um usuário do GitHub;</li>
+  <li>Eu, como usuário, desejo visualizar os detalhes desse usuário que foi buscado (organização, localização, número de seguidores, repositórios e stars);
+  </li>
+  <li>Eu, como usuário, desejo visualizar a lista de repositórios do usuário buscado, ordenando pela quantidade de estrela de forma decrescente;
+  </li>
+  <li>Eu, como usuário, desejo adicionar repositórios em uma lista de repositórios favoritos e conseguir acessa-los em uma página "Favoritos".</li>
+  <li>Ao buscar um usuário pelo login do github, redirecionar para página de resultados da busca.</li>
+  <li>Se o usuário for encontrado, apresentar os detalhes do usuário, senão, exibir mensagem amigável.</li>
+</ul>
+<!--## :sparkles: Features ##
 
 :heavy_check_mark: Feature 1;\
 :heavy_check_mark: Feature 2;\
 :heavy_check_mark: Feature 3;
-
+-->
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
